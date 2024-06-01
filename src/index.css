@@ -1,0 +1,49 @@
+:root {
+  --Orange: #fb6900;
+  --Red: #f63700;
+  --NavyBlue: #004853;
+  --BluishGreen: #007e80;
+  --Turquoise: #00b9bd;
+
+  --SoftTurquoise: #b2dcd9;
+  --GreenishGray: #5d7e7c;
+  --GreenOil: #003c3d;
+  --DarkGreen: #002c2d;
+  --IntenseOrange: #ff8f1f;
+  --BurntOrange: #fb6900;
+  --YellowOrange: #ffb636;
+  --GoldenYellow: #ffd649;
+  --YellowMustard: #f9bb32;
+  --BrightYellow: #efab00;
+  --SkyBlue: #84ddff;
+  --YellowCorn: #fcc13e;
+  --DarkOrange: #d46e2e;
+  --SkyBlue: #3890fa;
+  --LimeGreen: #78d868;
+  --SlateBlue: #3f4273;
+  --HoneyYellow: #f4d055;
+  --CoralOrange: #fa965a;
+  --ElectricPurple: #9747ff;
+  --PastelPink: #f2aeca;
+
+  --White: #ffffff;
+  --SmokeWhite: #f6f6f6;
+  --LightGray: #e6e6e6;
+  --SilverGray: #cccccc;
+  --Gray: #848484;
+  --AsphaltGray: #747474;
+  --Black: #000000;
+  --shadow: 0px 23px 21px -8px rgba(136, 160, 255, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 100%;
+  overflow-x: hidden;
+}

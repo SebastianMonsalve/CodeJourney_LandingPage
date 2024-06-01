@@ -1,0 +1,60 @@
+.nav {
+  background: linear-gradient(to right, #004853, #007e80, #00b9bd);
+  color: var(--SmokeWhite);
+  position: fixed;
+  z-index: 100;
+}
+.header-container {
+  width: 100vw;
+  height: 12vh;
+  display: flex;
+  row-gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.header-logo {
+  width: 10rem;
+  cursor: pointer;
+}
+.header-menu {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+.header-menu a {
+  text-decoration: none;
+  color: var(--SmokeWhite);
+  cursor: pointer;
+  font-size: 1.1em;
+}
+.header-select {
+  padding: 0.5rem 2rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: var(--SmokeWhite);
+  font-size: 1.2em;
+  cursor: pointer;
+  position: relative;
+}
+.header-select option {
+  background-color: var(--NavyBlue);
+  color: var(--SmokeWhite);
+}
+.header-button {
+  padding: 0.5rem 2.5rem;
+  background-color: var(--NavyBlue);
+  border: 0.2rem transparent;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  box-shadow: 0rem 0rem 0 var(--SoftTurquoise);
+  transition: all 0.3s ease-in-out;
+}
+.header-button:hover {
+  box-shadow: 0.3rem 0.3rem 1rem var(--SoftTurquoise);
+}
+.header-button a {
+  font-size: 1.4em;
+  color: var(--SmokeWhite);
+}
