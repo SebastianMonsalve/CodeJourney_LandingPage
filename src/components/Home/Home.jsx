@@ -49,9 +49,18 @@ const Home = () => {
             nosotros y alcanza tus metas educativas de manera efectiva y
             divertida!
           </p>
-          <button className="home-button">
-            <a href="">Descargar APK</a>
-          </button>
+          <div className="home-buttons">
+            <a href="" className="home-button">
+              <p>Descargar APK</p>
+            </a>
+            <a className="home-button-play">
+              <i className="fa-brands fa-google-play" />
+              <div className="home-button-play-container">
+                <p>Proximamente en</p>
+                <span>Google Play</span>
+              </div>
+            </a>
+          </div>
         </div>
         <div className="home-image">
           <img

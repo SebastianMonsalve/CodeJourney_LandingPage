@@ -39,12 +39,12 @@
   position: relative;
 }
 .header-select option {
-  background-color: var(--NavyBlue);
+  background-color: var(--DarkGreen);
   color: var(--SmokeWhite);
 }
 .header-button {
   padding: 0.5rem 2.5rem;
-  background-color: var(--NavyBlue);
+  background-color: var(--DarkGreen);
   border: 0.2rem transparent;
   cursor: pointer;
   border-radius: 0.5rem;

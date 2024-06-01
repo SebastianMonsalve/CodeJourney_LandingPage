@@ -32,10 +32,20 @@
   text-wrap: balance;
   margin-bottom: 1.5rem;
 }
+.home-buttons {
+  width: 50%;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
 .home-button {
-  width: 30%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   padding: 0.8rem 0;
-  background-color: var(--NavyBlue);
+  background-color: var(--DarkGreen);
   border: 0.2rem transparent;
   cursor: pointer;
   border-radius: 0.5rem;
@@ -45,10 +55,38 @@
 .home-button:hover {
   box-shadow: 0.6rem 0.6rem 1rem var(--Turquoise);
 }
-.home-button a {
-  text-decoration: none;
-  font-size: 1.8em;
+.home-button p {
+  font-size: 1.5em;
   color: var(--SmokeWhite);
+}
+.home-button-play {
+  width: 40%;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  cursor: default;
+  background: var(--SoftTurquoise);
+  color: var(--DarkGreen);
+  border-radius: 0.5rem;
+}
+.home-button-play i {
+  font-size: 2.5em;
+}
+.home-button-play-container {
+  align-items: center;
+}
+.home-button-play-container p {
+  font-size: 1em;
+  font-weight: 500;
+  margin-bottom: -0.6rem;
+}
+.home-button-play-container span {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: -0.5rem;
 }
 .home-image {
   position: absolute;
