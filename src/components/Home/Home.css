@@ -168,7 +168,7 @@
   .home-image {
     width: 100%;
     justify-content: center;
-    height: 30%;
+    height: 50%;
   }
   .home-image img {
     mask-image: linear-gradient(black 90%, transparent);

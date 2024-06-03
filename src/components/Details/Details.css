@@ -77,7 +77,6 @@
       var(--SmokeWhite),
       var(--GreenishGray)
     );
-    padding-top: 2rem;
   }
   .details-fondo {
     top: auto;
@@ -102,13 +101,13 @@
   }
   .details-info p {
     width: 100%;
-    font-size: 1em;
+    font-size: 0.9em;
   }
   .details-image {
     width: 100vw;
     justify-content: center;
-    padding: 1rem;
-    padding-bottom: 2rem;
+    padding: 0.5rem;
+    padding-bottom: 1rem;
     height: auto;
   }
   .details-image img {
