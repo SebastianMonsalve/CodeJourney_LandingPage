@@ -130,7 +130,7 @@
 
 @media (max-width: 630px) {
   .home-container {
-    padding-top: 10vh;
+    padding-top: 5vh;
     flex-direction: column-reverse;
   }
   .home-info {
@@ -168,7 +168,7 @@
   .home-image {
     width: 100%;
     justify-content: center;
-    height: 50%;
+    height: 40%;
   }
   .home-image img {
     mask-image: linear-gradient(black 90%, transparent);
