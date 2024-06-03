@@ -2,65 +2,92 @@
   background: linear-gradient(to right, #004853, #007e80, #00b9bd);
 }
 .home-container {
-  padding-top: 5vh;
+  padding-top: 12vh;
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   position: relative;
   z-index: 1;
+  flex-wrap: wrap;
 }
 .home-info {
-  width: 80%;
+  width: 60%;
   display: flex;
+  padding-left: 15vw;
   flex-direction: column;
-  padding: 4rem;
 }
 .home-title {
   color: var(--SmokeWhite);
   font-size: 4em;
   font-weight: 500;
-  width: 90%;
   text-wrap: balance;
+  margin-bottom: 1rem;
 }
 .home-p {
   color: var(--SoftTurquoise);
-  font-size: 1.2em;
-  width: 60%;
+  font-size: 1.3em;
   text-wrap: balance;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 .home-buttons {
-  width: 50%;
   display: flex;
   gap: 1rem;
-  justify-content: space-between;
 }
 .home-button {
-  width: 60%;
+  width: 30rem;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  padding: 0.8rem 0;
   background-color: var(--DarkGreen);
   border: 0.2rem transparent;
   cursor: pointer;
   border-radius: 0.5rem;
-  box-shadow: 0rem 0rem 0 var(--Turquoise);
-  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
 }
-.home-button:hover {
-  box-shadow: 0.6rem 0.6rem 1rem var(--Turquoise);
+.home-button::before {
+  position: absolute;
+  content: "";
+  width: 180%;
+  height: 80%;
+  background-color: transparent;
+  transform: rotate(15deg);
+}
+@media (hover: hover) {
+  .home-button:hover::before {
+    background-color: var(--Turquoise);
+    animation: animate 15s linear infinite;
+  }
+}
+.home-button::after {
+  position: absolute;
+  content: "";
+  width: 29.6rem;
+  height: 3.6rem;
+  border-radius: 0.5rem;
+  background-color: var(--DarkGreen);
+}
+@keyframes animate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .home-button p {
+  z-index: 1;
   font-size: 1.5em;
+  font-weight: 600;
   color: var(--SmokeWhite);
 }
 .home-button-play {
-  width: 40%;
+  width: 15rem;
   text-decoration: none;
   display: flex;
   flex-direction: row;
@@ -89,8 +116,64 @@
   margin-top: -0.5rem;
 }
 .home-image {
-  position: absolute;
-  height: 85vh;
-  right: 6rem;
-  bottom: 0;
+  width: 40%;
+  display: flex;
+  justify-content: left;
+  height: 88vh;
+  overflow: hidden;
+}
+.home-image img {
+  object-fit: cover;
+  width: auto;
+  height: 100%;
+}
+
+@media (max-width: 630px) {
+  .home-container {
+    padding-top: 10vh;
+    flex-direction: column-reverse;
+  }
+  .home-info {
+    width: 100%;
+    padding-left: 0;
+    padding: 0 2rem;
+  }
+  .home-title {
+    font-size: 2em;
+  }
+  .home-p {
+    font-size: 1em;
+  }
+  .home-button {
+    width: 16rem;
+    height: 3rem;
+  }
+  .home-button p {
+    font-size: 1.2em;
+  }
+  .home-button-play {
+    width: 12rem;
+    gap: 0.5rem;
+  }
+  .home-button-play i {
+    font-size: 1.5em;
+  }
+  .home-button-play-container p {
+    margin-bottom: -0.2rem;
+    font-size: 0.8em;
+  }
+  .home-button-play-container span {
+    font-size: 1.2em;
+  }
+  .home-image {
+    width: 100%;
+    justify-content: center;
+    height: 25rem;
+  }
+  .home-image img {
+    mask-image: linear-gradient(black 90%, transparent);
+    object-fit: cover;
+    width: auto;
+    height: 100%;
+  }
 }

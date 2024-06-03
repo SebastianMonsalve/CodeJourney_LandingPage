@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import mockup from "../../../public/MockUp-Mano.png";
 import ColorBox from "../ColorBox";
 
 const Home = () => {
@@ -7,35 +8,40 @@ const Home = () => {
     <section className="home">
       <div className="home-container">
         <ColorBox
-          size="6.25rem"
+          size="11vmin"
           color="var(--ElectricPurple)"
-          top="9rem"
-          left="4rem"
+          top="15vmin"
+          left="10vmin"
         />
         <ColorBox
-          size="4rem"
+          size="7vmin"
           color="var(--LimeGreen)"
-          top="12rem"
-          right="10rem"
+          top="20vmin"
+          right="15vmin"
         />
         <ColorBox
-          size="5rem"
+          size="9vmin"
           color="var(--GoldenYellow)"
-          bottom="5rem"
-          left="24rem"
+          bottom="5vmin"
+          left="45vmin"
         />
-        <ColorBox size="3rem" color="var(--Orange)" top="8rem" right="50rem" />
         <ColorBox
-          size="7rem"
+          size="6vmin"
+          color="var(--Orange)"
+          top="15vmin"
+          right="100vmin"
+        />
+        <ColorBox
+          size="12vmin"
           color="var(--SkyBlue)"
-          top="20rem"
-          right="52rem"
+          top="38vmin"
+          right="95vmin"
         />
         <ColorBox
-          size="6rem"
+          size="11vmin"
           color="var(--SlateBlue)"
-          bottom="2rem"
-          right="5rem"
+          bottom="5vmin"
+          right="10vmin"
         />
         <div className="home-info">
           <h1 className="home-title">
@@ -64,9 +70,10 @@ const Home = () => {
         </div>
         <div className="home-image">
           <img
-            src="../../../public/MockUp-Mano.png"
+            src={mockup}
             alt="mockup"
             className="home-image"
+            draggable="false"
           />
         </div>
       </div>

@@ -33,9 +33,7 @@
   --Gray: #848484;
   --AsphaltGray: #747474;
   --Black: #000000;
-  --shadow: 0px 23px 21px -8px rgba(136, 160, 255, 0.25);
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -46,4 +44,11 @@
 body {
   font-size: 100%;
   overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 0.8rem;
+  background-color: var(--Turquoise);
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--SmokeWhite);
 }

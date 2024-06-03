@@ -1,0 +1,118 @@
+.details-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to left, var(--SmokeWhite), var(--GreenishGray));
+}
+.details-fondo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+.details-fondo img {
+  mask-image: linear-gradient(to right, black 20%, transparent);
+  height: 130%;
+  object-fit: cover;
+}
+.details-info {
+  width: 60%;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  flex-direction: column;
+  padding: 4rem;
+}
+.details-info h2 {
+  font-size: 2em;
+  color: var(--DarkGreen);
+  margin-bottom: 1rem;
+}
+.details-info p {
+  width: 70%;
+  font-size: 1.4em;
+  color: var(--DarkGreen);
+}
+.details-image {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 4rem;
+  height: 100vh;
+  overflow: hidden;
+}
+.details-image img {
+  object-fit: cover;
+  width: auto;
+  height: 85%;
+  rotate: 5deg;
+  animation: float 15s infinite;
+}
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+    rotate: 5deg;
+  }
+  50% {
+    transform: translate(0.8rem, -0.8rem);
+    rotate: 3deg;
+  }
+  100% {
+    transform: translate(0, 0);
+    rotate: 5deg;
+  }
+}
+
+@media (max-width: 630px) {
+  .details-container {
+    flex-direction: column;
+    background: linear-gradient(
+      to bottom,
+      var(--SmokeWhite),
+      var(--GreenishGray)
+    );
+    padding-top: 2rem;
+  }
+  .details-fondo {
+    top: auto;
+    bottom: 0;
+    width: 100vw;
+    height: 30rem;
+  }
+  .details-fondo img {
+    mask-image: linear-gradient(to top, black 20%, transparent);
+    width: 100%;
+    height: auto;
+    rotate: 90deg;
+  }
+  .details-info {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .details-info h2 {
+    font-size: 1.5em;
+  }
+  .details-info p {
+    width: 100%;
+    font-size: 1em;
+  }
+  .details-image {
+    width: 100vw;
+    justify-content: center;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    height: auto;
+  }
+  .details-image img {
+    width: auto;
+    height: 100%;
+  }
+}
