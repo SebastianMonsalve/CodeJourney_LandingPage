@@ -139,17 +139,17 @@
     padding: 0 2rem;
   }
   .home-title {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .home-p {
-    font-size: 1em;
+    font-size: 0.9em;
   }
   .home-button {
-    width: 16rem;
+    width: 12rem;
     height: 3rem;
   }
   .home-button p {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .home-button-play {
     width: 12rem;
@@ -160,15 +160,15 @@
   }
   .home-button-play-container p {
     margin-bottom: -0.2rem;
-    font-size: 0.8em;
+    font-size: 0.6em;
   }
   .home-button-play-container span {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .home-image {
     width: 100%;
     justify-content: center;
-    height: 25rem;
+    height: 30%;
   }
   .home-image img {
     mask-image: linear-gradient(black 90%, transparent);
