@@ -39,7 +39,7 @@
   opacity: 0;
   pointer-events: none;
   transform: scale(0.8);
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .details-card-active {
   opacity: 1;
@@ -78,7 +78,8 @@
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-  background-color: var(--SmokeWhite);
+  background-color: transparent;
+  border: 2px solid var(--SmokeWhite);
   margin-left: 1rem;
   display: inline-block;
   cursor: pointer;
@@ -87,7 +88,7 @@
   transform: scale(1.2);
 }
 .pagination-dot-active {
-  background-color: var(--GreenishGray);
+  background-color: var(--SmokeWhite);
 }
 .details-info {
   width: 60%;
@@ -150,11 +151,6 @@
   }
   .details-card {
     flex-direction: column;
-    background: linear-gradient(
-      to bottom,
-      var(--SmokeWhite),
-      var(--GreenishGray)
-    );
   }
   .details-fondo {
     top: auto;

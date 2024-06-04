@@ -25,9 +25,6 @@ const Details = () => {
   return (
     <section>
       <div className="details-container">
-        <div className="details-fondo">
-          <img src={stars} alt="background to stars" draggable="false" />
-        </div>
         <div
           className="details-carousel"
           onMouseEnter={() => {
@@ -49,6 +46,13 @@ const Details = () => {
                       : "details-card"
                   }
                 >
+                  <div className="details-fondo">
+                    <img
+                      src={item.bg}
+                      alt="background to stars"
+                      draggable="false"
+                    />
+                  </div>
                   <div className="details-info">
                     <h2>{item.title}</h2>
                     <p>{item.text}</p>
