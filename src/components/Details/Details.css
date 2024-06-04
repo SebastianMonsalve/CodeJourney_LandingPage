@@ -141,6 +141,13 @@
 /* Responsive */
 
 @media (max-width: 630px) {
+  .details-container {
+    background: linear-gradient(
+      to bottom,
+      var(--SmokeWhite),
+      var(--GreenishGray)
+    );
+  }
   .details-card {
     flex-direction: column;
     background: linear-gradient(
@@ -184,5 +191,25 @@
   .details-image img {
     width: auto;
     height: 100%;
+  }
+  .details-carousel-arrow-left,
+  .details-carousel-arrow-right {
+    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  .details-carousel-arrow-left {
+    left: 1rem;
+  }
+  .details-carousel-arrow-right {
+    right: 1rem;
+  }
+  .details-carousel-pagination {
+    bottom: 1rem;
+  }
+  .pagination-dot {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-left: 0.5rem;
   }
 }
