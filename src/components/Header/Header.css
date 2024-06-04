@@ -93,7 +93,7 @@
 }
 .header-button .button-mobile {
   display: none;
-  font-size: 2em;
+  font-size: 1.2em;
   font-weight: 600;
   z-index: 1;
   color: var(--SmokeWhite);
@@ -108,6 +108,10 @@
   }
   .header-menu {
     column-gap: 1.5rem;
+  }
+  .header-select {
+    padding: 0.2rem;
+    font-size: 0.9em;
   }
   .header-button {
     padding: 0.5rem 1rem;

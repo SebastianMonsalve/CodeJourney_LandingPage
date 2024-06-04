@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import mockup from "../../../public/MockUp-Mano.png";
+import mockup from "/MockUp-Mano.png";
 import ColorBox from "../ColorBox";
 
 const Home = () => {

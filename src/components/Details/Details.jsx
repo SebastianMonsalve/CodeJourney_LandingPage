@@ -1,31 +1,86 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Details.css";
-import home from "../../../public/MockUp (1).png";
-import stars from "../../../public/bg_Stars.png";
+import stars from "/bg_Stars.png";
+import { InformationApp } from "./Data";
 
 const Details = () => {
+  const [current, setCurrent] = useState(0);
+  const [autoPlay, setAutoPlay] = useState(true);
+  let timeOut = null;
+
+  useEffect(() => {
+    timeOut =
+      autoPlay &&
+      setTimeout(() => {
+        slideRight();
+      }, 10000);
+  });
+
+  const slideLeft = () => {
+    setCurrent(current === 0 ? InformationApp.length - 1 : current - 1);
+  };
+  const slideRight = () => {
+    setCurrent(current === InformationApp.length - 1 ? 0 : current + 1);
+  };
   return (
     <section>
       <div className="details-container">
         <div className="details-fondo">
           <img src={stars} alt="background to stars" draggable="false" />
         </div>
-        <div className="details-info">
-          <h2>Tu Aventura en Code Journey</h2>
-          <p>
-            Al iniciar sesión en Code Journey, serás recibido con un listado de
-            desafíos organizados en aventuras dentro de un curso específico. Si
-            deseas explorar otros cursos, simplemente haz clic en la tarjeta de
-            la aventura para cambiar. Al seleccionar un desafío, podrás empezar
-            a aprender respondiendo preguntas interactivas. Los desafíos se
-            desbloquean de manera progresiva a medida que los completes. En la
-            pantalla de inicio, también podrás ver tu racha de días
-            consecutivos, las oportunidades de error (compiladores) que tienes,
-            y comenzarás con 200 monedas para incentivarte en tu aprendizaje.
-          </p>
-        </div>
-        <div className="details-image">
-          <img src={home} alt="Home screen" draggable="false" />
+        <div
+          className="details-carousel"
+          onMouseEnter={() => {
+            setAutoPlay(false);
+            clearTimeout(timeOut);
+          }}
+          onMouseLeave={() => {
+            setAutoPlay(true);
+          }}
+        >
+          <div className="details-carousel-wrapper">
+            {InformationApp.map((item, index) => {
+              return (
+                <div
+                  key={index}
+                  className={
+                    index == current
+                      ? "details-card details-card-active"
+                      : "details-card"
+                  }
+                >
+                  <div className="details-info">
+                    <h2>{item.title}</h2>
+                    <p>{item.text}</p>
+                  </div>
+                  <div className="details-image">
+                    <img src={item.image} alt="Home screen" draggable="false" />
+                  </div>
+                </div>
+              );
+            })}
+            <div className="details-carousel-arrow-left" onClick={slideLeft}>
+              &lsaquo;
+            </div>
+            <div className="details-carousel-arrow-right" onClick={slideRight}>
+              &rsaquo;
+            </div>
+            <div className="details-carousel-pagination">
+              {InformationApp.map((_, index) => {
+                return (
+                  <div
+                    key={index}
+                    className={
+                      index == current
+                        ? "pagination-dot pagination-dot-active"
+                        : "pagination-dot"
+                    }
+                    onClick={() => setCurrent(index)}
+                  ></div>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </section>
