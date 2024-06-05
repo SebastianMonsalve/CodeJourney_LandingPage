@@ -49,7 +49,7 @@ export const InformationApp = [
       es: "Cuando estés en el home y hagas clic en la tarjeta de la aventura, verás los mundos (cursos) disponibles para aprender. Podrás viajar entre los cursos cuando lo desees. Cada curso mostrará su descripción, los trofeos obtenidos y los trofeos totales que se pueden conseguir. Esto te permitirá explorar y seguir tus logros en todos los cursos disponibles.",
       en: "When you are on the home and click on the adventure card, you will see the worlds (courses) available to learn. You can travel between courses whenever you want. Each course will show its description, the trophies obtained, and the total trophies that can be obtained. This will allow you to explore and track your achievements in all available courses.",
     },
-    bg: "/bg_Stars.png",
+    bg: "/bg_Galaxy.png",
   },
   {
     id: 5,
@@ -75,7 +75,7 @@ export const InformationApp = [
       es: "Si quieres aclarar dudas o profundizar en algún tema, tendrás acceso directo a la documentación oficial para cada uno de nuestros cursos. Así, no tendrás que buscar por tu cuenta; nosotros lo hacemos por ti para que solo te preocupes por aprender.",
       en: "If you want to clarify doubts or delve into a topic, you will have direct access to the official documentation for each of our courses. Thus, you will not have to search on your own; we do it for you so that you only worry about learning.",
     },
-    bg: "/bg_Stars.png",
+    bg: "/bg_Tech.png",
   },
   {
     id: 7,
