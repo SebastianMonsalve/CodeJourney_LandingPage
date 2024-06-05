@@ -1,14 +1,26 @@
 import React from "react";
 import "./Header.css";
 import logo from "/Titulo.png";
+import i18next from "../../../services/i18next.js";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
+  const { t } = useTranslation();
+  const changeLanguage = async (event) => {
+    const lng = event.target.value;
+    i18next.changeLanguage(lng);
+  };
+
   return (
     <section className="nav">
       <div className="header-container">
         <img src={logo} alt="logo" className="header-logo" draggable="false" />
         <div className="header-menu">
-          <select name="language" className="header-select">
+          <select
+            name="language"
+            className="header-select"
+            onChange={changeLanguage}
+          >
             <option value="es">Español</option>
             <option value="en">English</option>
           </select>
@@ -17,7 +29,7 @@ const Header = () => {
               <i className="fa-solid fa-download" />
             </a>
             <a href="" className="button-web">
-              Descargar APK
+              {t("home-button")}
             </a>
           </button>
         </div>

@@ -1,12 +1,25 @@
 import React, { useEffect, useState } from "react";
 import "./Details.css";
-import stars from "/bg_Stars.png";
 import { InformationApp } from "./Data";
+import { useTranslation } from "react-i18next";
 
 const Details = () => {
+  const { t, i18n } = useTranslation();
   const [current, setCurrent] = useState(0);
   const [autoPlay, setAutoPlay] = useState(true);
   let timeOut = null;
+
+  const translateData = (data) => {
+    return data.map((item) => {
+      return {
+        ...item,
+        title: item.title[i18n.language],
+        text: item.text[i18n.language],
+      };
+    });
+  };
+
+  const Information = translateData(InformationApp);
 
   useEffect(() => {
     timeOut =
@@ -36,7 +49,7 @@ const Details = () => {
           }}
         >
           <div className="details-carousel-wrapper">
-            {InformationApp.map((item, index) => {
+            {Information.map((item, index) => {
               return (
                 <div
                   key={index}
