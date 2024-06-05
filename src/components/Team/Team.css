@@ -1,0 +1,91 @@
+.team {
+  width: 100vw;
+  height: 88vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 10rem;
+  background-color: var(--SmokeWhite);
+}
+.team-title {
+  text-align: center;
+  font-size: 2.7rem;
+  font-weight: 600;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  color: #080808;
+}
+.team-separator {
+  width: 20vw;
+  height: 0.3rem;
+  background-color: var(--BluishGreen);
+  margin: 0 auto;
+  border-radius: 5rem;
+  margin-bottom: 2rem;
+}
+.team-text {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-bottom: 4rem;
+}
+.team-members-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+.team-container {
+  width: 25rem;
+  height: 28rem;
+  display: flex;
+  justify-content: space-around;
+  border: 0.2rem solid var(--NavyBlue);
+}
+.team-image-container {
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-image {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: var(--NavyBlue);
+}
+.team-name {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+.team-role {
+  margin-top: -0.5rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.team-card-separator {
+  width: 30%;
+  height: 0.2rem;
+  background-color: var(--AsphaltGray);
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+.team-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.team-contact a {
+  text-decoration: none;
+}
+.team-contact a i {
+  font-size: 3rem;
+  color: var(--NavyBlue);
+}

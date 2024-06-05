@@ -11,7 +11,8 @@
   position: absolute;
   left: 0;
   top: 0;
-  height: 100vh;
+  height: 120vh;
+  margin-top: -15vh;
   overflow: hidden;
 }
 .details-fondo img {
@@ -143,11 +144,7 @@
 
 @media (max-width: 630px) {
   .details-container {
-    background: linear-gradient(
-      to bottom,
-      var(--SmokeWhite),
-      var(--GreenishGray)
-    );
+    background: linear-gradient(to bottom, var(--SmokeWhite), var(--GreenishGray));
   }
   .details-card {
     flex-direction: column;
