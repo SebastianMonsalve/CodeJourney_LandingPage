@@ -1,6 +1,52 @@
 .home {
   background: linear-gradient(to right, #004853, #007e80, #00b9bd);
 }
+.home-box {
+  position: absolute;
+  z-index: -1;
+}
+.box-purple {
+  width: 7rem;
+  height: 7rem;
+  top: 8rem;
+  left: 6rem;
+  background-color: var(--ElectricPurple);
+}
+.box-green {
+  width: 4rem;
+  height: 4rem;
+  top: 11rem;
+  right: 8rem;
+  background-color: var(--LimeGreen);
+}
+.box-yellow {
+  width: 5rem;
+  height: 5rem;
+  bottom: 3rem;
+  left: 24rem;
+  background-color: var(--GoldenYellow);
+}
+.box-orange {
+  width: 3rem;
+  height: 3rem;
+  top: 9rem;
+  right: 55rem;
+  background-color: var(--Orange);
+}
+.box-sky {
+  width: 8rem;
+  height: 8rem;
+  top: 20rem;
+  right: 50rem;
+  background-color: var(--SkyBlue);
+}
+.box-blue {
+  width: 6rem;
+  height: 6rem;
+  bottom: 3rem;
+  right: 5rem;
+  background-color: var(--SlateBlue);
+}
 .home-container {
   padding-top: 12vh;
   width: 100vw;
@@ -129,6 +175,42 @@
 }
 
 @media (max-width: 630px) {
+  .box-purple {
+    width: 5rem;
+    height: 5rem;
+    top: 6rem;
+    left: 2rem;
+  }
+  .box-green {
+    width: 2rem;
+    height: 2rem;
+    top: 9rem;
+    right: 4rem;
+  }
+  .box-yellow {
+    width: 3rem;
+    height: 3rem;
+    bottom: 1rem;
+    left: 5rem;
+  }
+  .box-orange {
+    width: 1rem;
+    height: 1rem;
+    top: 20rem;
+    right: 2rem;
+  }
+  .box-sky {
+    width: 4rem;
+    height: 4rem;
+    top: 31rem;
+    right: 11rem;
+  }
+  .box-blue {
+    width: 3rem;
+    height: 3rem;
+    bottom: 4rem;
+    right: 3rem;
+  }
   .home-container {
     padding-top: 5vh;
     flex-direction: column-reverse;

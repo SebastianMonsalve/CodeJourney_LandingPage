@@ -2,7 +2,6 @@ import React from "react";
 import "./Home.css";
 import mockup from "/MockUp-Mano.png";
 import ColorBox from "../ColorBox";
-import i18next from "../../../services/i18next.js";
 import { useTranslation } from "react-i18next";
 
 const Home = () => {
@@ -10,42 +9,12 @@ const Home = () => {
   return (
     <section className="home">
       <div className="home-container">
-        <ColorBox
-          size="11vmin"
-          color="var(--ElectricPurple)"
-          top="15vmin"
-          left="10vmin"
-        />
-        <ColorBox
-          size="7vmin"
-          color="var(--LimeGreen)"
-          top="20vmin"
-          right="15vmin"
-        />
-        <ColorBox
-          size="9vmin"
-          color="var(--GoldenYellow)"
-          bottom="5vmin"
-          left="45vmin"
-        />
-        <ColorBox
-          size="6vmin"
-          color="var(--Orange)"
-          top="15vmin"
-          right="100vmin"
-        />
-        <ColorBox
-          size="12vmin"
-          color="var(--SkyBlue)"
-          top="38vmin"
-          right="95vmin"
-        />
-        <ColorBox
-          size="11vmin"
-          color="var(--SlateBlue)"
-          bottom="5vmin"
-          right="10vmin"
-        />
+        <div className="home-box box-purple"></div>
+        <div className="home-box box-green"></div>
+        <div className="home-box box-yellow"></div>
+        <div className="home-box box-orange"></div>
+        <div className="home-box box-sky"></div>
+        <div className="home-box box-blue"></div>
         <div className="home-info">
           <h1 className="home-title">{t("home-title")}</h1>
           <p className="home-p">{t("home-description")}</p>

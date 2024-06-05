@@ -159,7 +159,7 @@
     height: 30rem;
   }
   .details-fondo img {
-    mask-image: linear-gradient(to top, black 20%, transparent);
+    mask-image: linear-gradient(to left, black 40%, transparent);
     width: 100%;
     height: auto;
     rotate: 90deg;
