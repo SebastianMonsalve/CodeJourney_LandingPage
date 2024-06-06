@@ -59,3 +59,32 @@
   height: 50%;
   object-fit: cover;
 }
+@media (max-width: 630px) {
+  .features_long {
+    padding-top: 2rem;
+  }
+  .feat-container {
+    display: block;
+    height: auto;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 5rem;
+  }
+  .feat-text-container {
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .feat-text-title {
+    font-size: 2rem;
+  }
+  .feat-text {
+    font-size: 1rem;
+  }
+  .feat-img {
+    width: 30%;
+    height: auto;
+  }
+}

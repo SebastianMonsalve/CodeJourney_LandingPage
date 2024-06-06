@@ -9,7 +9,7 @@
   z-index: -3;
 }
 .svg-feat {
-  margin-top: -0.5rem;
+  margin-top: -1.2rem;
   display: block;
   position: absolute;
   top: 0;
@@ -65,4 +65,69 @@
 .feature-box-text {
   font-size: 1.3em;
   text-align: center;
+}
+@media (min-width: 1000px) {
+  .svg-feat {
+    margin-top: -0.9rem;
+  }
+  .box-red {
+    width: 6rem;
+    height: 6rem;
+    top: 5rem;
+    right: 70rem;
+  }
+  .feature-container {
+    margin-top: 20rem;
+  }
+  .feature-box {
+    width: 20rem;
+    height: 20rem;
+  }
+  .feature-box i {
+    font-size: 3.5em;
+  }
+  .feature-box-title {
+    font-size: 1.3em;
+  }
+  .feature-box-separator {
+    width: 40%;
+    height: 0.3rem;
+    margin: 0.5rem 0;
+  }
+  .feature-box-text {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 630px) {
+  .features-main-container {
+    height: auto;
+  }
+  .box-red {
+    display: none;
+  }
+  .svg-feat {
+    display: none;
+  }
+  .feature-container {
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+  .feature-box {
+    width: 15rem;
+    height: 15rem;
+  }
+  .feature-box i {
+    font-size: 2.5em;
+  }
+  .feature-box-title {
+    font-size: 1em;
+  }
+  .feature-box-separator {
+    width: 30%;
+    height: 0.3rem;
+    margin: 0.5rem 0;
+  }
+  .feature-box-text {
+    font-size: 0.8em;
+  }
 }

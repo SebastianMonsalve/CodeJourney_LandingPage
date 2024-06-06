@@ -1,6 +1,6 @@
-import './Team.css'
-import developerTeamData from './teamData'
 import { useTranslation } from "react-i18next";
+import './Team.css';
+import developerTeamData from './teamData';
 
 const Team = () => {
   const { t, i18n } = useTranslation();
@@ -23,7 +23,7 @@ const Team = () => {
       <p className='team-text'>{t('team-description')}</p>
       <div className="team-members-container">
         {team.map((member) => (
-          <div className="team-container">
+          <div key={member.id} className="team-container">
             <div className="team-card">
               <div className="team-image-container">
                 <img src={member.image} alt="team-member" className="team-image" />
@@ -34,10 +34,10 @@ const Team = () => {
               <p className="team-name">{t('team-text')}</p>
               <div className="team-contact">
                 <a href={member.github} target="_blank" rel="noreferrer" className="team-link">
-                  <i class="fa-brands fa-github"></i>
+                  <i className="fa-brands fa-github"></i>
                 </a>
                 <a href={member.web} target="_blank" rel="noreferrer" className="team-link">
-                  <i class="fa-solid fa-link"></i>
+                  <i className="fa-solid fa-link"></i>
                 </a>
               </div>
             </div>

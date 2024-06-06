@@ -1,6 +1,6 @@
 .carousel {
   max-width: 100%;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   background-color: var(--White);
 }
 .carousel-title {
@@ -33,7 +33,7 @@
 }
 .carousel__img {
   width: auto;
-  height: 5rem;
+  height: 2.5rem;
 }
 [data-duration='fast'] {
   --animation-duration: 30s;
@@ -44,5 +44,25 @@
 @keyframes scroll {
   to {
     transform: translate(calc(-50% - 0.5rem));
+  }
+}
+@media (min-width: 1000px) {
+  .carousel-title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 630px) {
+  .carousel {
+    padding: 0.5rem;
+  }
+  .carousel-title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .scroller {
+    padding: 0.5rem 0;
+  }
+  .carousel__img {
+    height: 1.2rem;
   }
 }
