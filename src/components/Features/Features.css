@@ -9,7 +9,7 @@
   z-index: -3;
 }
 .svg-feat {
-  margin-top: -1.2rem;
+  margin-top: -1vh;
   display: block;
   position: absolute;
   top: 0;
@@ -24,7 +24,7 @@
   width: 7rem;
   height: 7rem;
   top: 5rem;
-  right: 90rem;
+  right: 85vw;
   background-color: var(--Red);
 }
 .feature-container {
@@ -66,15 +66,14 @@
   font-size: 1.3em;
   text-align: center;
 }
-@media (min-width: 1000px) {
+@media (max-width: 1540px) {
   .svg-feat {
     margin-top: -0.9rem;
   }
   .box-red {
     width: 6rem;
     height: 6rem;
-    top: 5rem;
-    right: 70rem;
+    top: 3rem;
   }
   .feature-container {
     margin-top: 20rem;

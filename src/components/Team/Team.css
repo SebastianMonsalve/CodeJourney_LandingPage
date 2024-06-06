@@ -1,6 +1,6 @@
 .team {
   width: 100vw;
-  height: 88vh;
+  height: 80vh;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -90,7 +90,7 @@
   font-size: 3rem;
   color: var(--NavyBlue);
 }
-@media (min-width: 1000px) {
+@media (max-width: 1540px) {
   .team {
     height: 100vh;
     padding: 0 5rem;

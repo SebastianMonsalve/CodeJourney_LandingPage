@@ -29,7 +29,7 @@
   gap: 4rem;
   align-items: center;
   flex-wrap: nowrap;
-  animation: scroll var(--animation-duration, 180s) var(--animation-direction, forwards) linear infinite;
+  animation: scroll var(--animation-duration, 20s) var(--animation-direction, forwards) linear infinite;
 }
 .carousel__img {
   width: auto;
