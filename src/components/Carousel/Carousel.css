@@ -69,9 +69,6 @@
   .scroller {
     padding: 0.5rem 0;
   }
-  .scroller__inner {
-    gap: 2rem;
-  }
   .carousel__img {
     height: 1.2rem;
   }
