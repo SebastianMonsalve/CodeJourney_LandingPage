@@ -7,8 +7,13 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Team from "./components/Team/Team";
 import Testimonial from "./components/Tertimonial/Testimonial";
+import Footer from "./components/Footer/Footer";
+import "./App.css";
 
 function App() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <div className="App">
       <Header />
@@ -19,6 +24,10 @@ function App() {
       <Features_Long />
       <Carousel />
       <Team />
+      <Footer />
+      <button className="scroll-to-top" onClick={scrollToTop}>
+        <i className="fa-solid fa-chevron-up" />
+      </button>
     </div>
   );
 }
