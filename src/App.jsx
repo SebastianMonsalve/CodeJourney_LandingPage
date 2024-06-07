@@ -7,7 +7,7 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Team from "./components/Team/Team";
 import Testimonial from "./components/Tertimonial/Testimonial";
-import Footer from "./components/Footer/Footer";
+import Footer from "./components/Footer/Footer"; // Import the Footer component
 import "./App.css";
 
 function App() {
