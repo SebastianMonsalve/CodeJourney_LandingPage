@@ -15,11 +15,7 @@ function App() {
       <Home />
       <Features />
       <Testimonial />
-      <Details
-        image={InformationApp.image}
-        title={InformationApp.title}
-        text={InformationApp.text}
-      />
+      <Details />
       <Features_Long />
       <Carousel />
       <Team />

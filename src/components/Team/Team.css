@@ -14,7 +14,7 @@
   font-weight: 600;
   margin-top: 3rem;
   margin-bottom: 2rem;
-  color: #080808;
+  color: var(--DarkGreen);
 }
 .team-separator {
   width: 20vw;
@@ -28,7 +28,9 @@
   text-align: center;
   font-size: 1.3rem;
   font-weight: 300;
+  color: var(--DarkGreen);
   margin-bottom: 4rem;
+  text-wrap: balance;
 }
 .team-members-container {
   display: flex;
@@ -51,8 +53,8 @@
   align-items: center;
 }
 .team-image {
-  width: 10rem;
-  height: 10rem;
+  width: 14rem;
+  height: 14rem;
   border-radius: 50%;
   object-fit: cover;
   background-color: var(--NavyBlue);
@@ -62,12 +64,14 @@
   font-size: 1.6rem;
   font-weight: 600;
   margin-top: 1rem;
+  color: var(--DarkGreen);
 }
 .team-role {
   margin-top: -0.5rem;
   text-align: center;
   font-size: 1rem;
   font-weight: 300;
+  color: var(--DarkGreen);
 }
 .team-card-separator {
   width: 30%;
@@ -82,13 +86,14 @@
   align-items: center;
   gap: 2rem;
   margin-top: 1rem;
+  color: var(--DarkGreen);
 }
 .team-contact a {
   text-decoration: none;
 }
 .team-contact a i {
   font-size: 3rem;
-  color: var(--NavyBlue);
+  color: var(--DarkGreen);
 }
 @media (max-width: 1540px) {
   .team {
@@ -134,7 +139,7 @@
     font-size: 2rem;
   }
 }
-@media (max-width: 630px) {
+@media (max-width: 780px) {
   .team {
     margin-top: -3rem;
     padding: 0 2rem;

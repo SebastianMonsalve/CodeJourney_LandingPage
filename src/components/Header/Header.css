@@ -1,5 +1,10 @@
 .nav {
-  background: linear-gradient(to right, var(--NavyBlue), var(--BluishGreen), var(--Turquoise));
+  background: linear-gradient(
+    to right,
+    var(--NavyBlue),
+    var(--BluishGreen),
+    var(--Turquoise)
+  );
   color: var(--SmokeWhite);
   position: fixed;
   z-index: 100;
@@ -56,7 +61,7 @@
 }
 .header-button::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 180%;
   height: 80%;
   background-color: transparent;
@@ -70,7 +75,7 @@
 }
 .header-button::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 98%;
   height: 92%;
   border-radius: 0.5rem;
@@ -99,10 +104,12 @@
   color: var(--SmokeWhite);
 }
 
-@media (max-width: 630px) {
+@media (max-width: 1046px) {
   .header-container {
     height: 8vh;
   }
+}
+@media (max-width: 780px) {
   .header-logo {
     width: 5rem;
   }

@@ -1,6 +1,10 @@
-.testimonial-container {
+.testimonial {
   width: 100vw;
   height: 100vh;
+}
+.testimonial-container {
+  width: 100%;
+  height: 100%;
   display: flex;
   position: relative;
   align-items: center;
@@ -9,7 +13,6 @@
   z-index: -3;
 }
 .svg-testi {
-  margin-bottom: -4vh;
   display: block;
   position: absolute;
   bottom: 0;
@@ -29,7 +32,7 @@
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 3rem;
-  color: #080808;
+  color: var(--DarkGreen);
   text-align: center;
 }
 .testimonial-wrapper {
@@ -119,13 +122,54 @@
     height: 1.5rem;
   }
 }
-@media (max-width: 630px) {
+@media (max-width: 1046px) {
+  .testimonial-container {
+    height: 100vh;
+  }
+  .testimonial-wrapper {
+    gap: 2rem;
+    margin-bottom: -2rem;
+    height: auto;
+  }
+
+  .testimonial-title {
+    margin-top: -16rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .testimonial-card {
+    width: 30rem;
+    height: 18rem;
+  }
+  .user-container {
+    height: 2rem;
+  }
+  .user-img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .user-name {
+    font-size: 1.2rem;
+  }
+  .testimonial-text {
+    font-size: 1.2rem;
+  }
+  .role-container {
+    height: 2rem;
+  }
+  .company-logo {
+    height: 1.6rem;
+  }
+}
+@media (max-width: 780px) {
+  .testimonial {
+    height: auto;
+  }
   .testimonial-container {
     height: auto;
   }
   .testimonial-wrapper {
     gap: 1rem;
-    margin-bottom: -2rem;
   }
   .svg-testi {
     display: none;
@@ -134,15 +178,13 @@
     display: block;
   }
   .testimonial-title {
+    margin-top: 0;
     font-size: 1rem;
     margin-bottom: 2rem;
   }
   .testimonial-card {
     width: 18rem;
     height: 12rem;
-  }
-  .user-container {
-    height: 2rem;
   }
   .user-img {
     width: 2rem;
