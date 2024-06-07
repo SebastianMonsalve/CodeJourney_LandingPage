@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.css";
 import logo from "/Titulo.png";
 import i18next from "../../../services/i18next.js";
@@ -6,13 +6,30 @@ import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const { t } = useTranslation();
+  const [isScrolled, setIsScrolled] = useState(false);
+
   const changeLanguage = async (event) => {
     const lng = event.target.value;
     i18next.changeLanguage(lng);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <section className="nav">
+    <section className={`nav ${isScrolled ? "nav-scrolled" : ""}`}>
       <div className="header-container">
         <img src={logo} alt="logo" className="header-logo" draggable="false" />
         <div className="header-menu">

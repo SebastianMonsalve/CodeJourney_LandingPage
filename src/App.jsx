@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import Carousel from "./components/Carousel/Carousel";
 import { InformationApp } from "./components/Details/Data";
 import Details from "./components/Details/Details";
@@ -11,9 +12,27 @@ import Footer from "./components/Footer/Footer";
 import "./App.css";
 
 function App() {
+  const [showScrollToTop, setShowScrollToTop] = useState(false);
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setShowScrollToTop(true);
+      } else {
+        setShowScrollToTop(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="App">
       <Header />
@@ -25,7 +44,10 @@ function App() {
       <Carousel />
       <Team />
       <Footer />
-      <button className="scroll-to-top" onClick={scrollToTop}>
+      <button
+        className={`scroll-to-top ${showScrollToTop ? "show" : ""}`}
+        onClick={scrollToTop}
+      >
         <i className="fa-solid fa-chevron-up" />
       </button>
     </div>

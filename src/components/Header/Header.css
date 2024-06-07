@@ -8,7 +8,13 @@
   color: var(--SmokeWhite);
   position: fixed;
   z-index: 100;
+  transition: box-shadow 0.3s ease;
 }
+
+.nav-scrolled {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .header-container {
   width: 100vw;
   height: 12vh;
@@ -18,21 +24,25 @@
   justify-content: space-between;
   padding: 1rem 2rem;
 }
+
 .header-logo {
   width: 10rem;
   cursor: pointer;
 }
+
 .header-menu {
   display: flex;
   align-items: center;
   column-gap: 2rem;
 }
+
 .header-menu a {
   text-decoration: none;
   color: var(--SmokeWhite);
   cursor: pointer;
   font-size: 1.1em;
 }
+
 .header-select {
   padding: 0.5rem 2rem;
   outline: none;
@@ -43,10 +53,12 @@
   cursor: pointer;
   position: relative;
 }
+
 .header-select option {
   background-color: var(--DarkGreen);
   color: var(--SmokeWhite);
 }
+
 .header-button {
   display: flex;
   align-items: center;
@@ -59,6 +71,7 @@
   position: relative;
   overflow: hidden;
 }
+
 .header-button::before {
   position: absolute;
   content: "";
@@ -67,12 +80,14 @@
   background-color: transparent;
   transform: rotate(15deg);
 }
+
 @media (hover: hover) {
   .header-button:hover::before {
     background-color: var(--SoftTurquoise);
     animation: animate 15s linear infinite;
   }
 }
+
 .header-button::after {
   position: absolute;
   content: "";
@@ -81,6 +96,7 @@
   border-radius: 0.5rem;
   background-color: var(--DarkGreen);
 }
+
 @keyframes animate {
   from {
     transform: rotate(0deg);
@@ -89,6 +105,7 @@
     transform: rotate(360deg);
   }
 }
+
 .header-button .button-web {
   display: flex;
   font-size: 1.4em;
@@ -96,6 +113,7 @@
   z-index: 1;
   color: var(--SmokeWhite);
 }
+
 .header-button .button-mobile {
   display: none;
   font-size: 1.2em;
@@ -109,6 +127,7 @@
     height: 8vh;
   }
 }
+
 @media (max-width: 780px) {
   .header-logo {
     width: 5rem;

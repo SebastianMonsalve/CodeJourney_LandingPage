@@ -1,6 +1,7 @@
 .testimonial {
   width: 100vw;
   height: 100vh;
+  position: relative;
 }
 .testimonial-container {
   width: 100%;
@@ -134,7 +135,6 @@
     margin-bottom: 15rem;
     height: auto;
   }
-
   .testimonial-title {
     margin-top: 0;
     font-size: 2.5rem;
@@ -165,20 +165,12 @@
   }
 }
 @media (max-width: 780px) {
-  .testimonial {
-    height: auto;
-  }
-  .testimonial-container {
-    height: auto;
-  }
   .testimonial-wrapper {
-    gap: 1rem;
+    gap: 2rem;
+    margin-bottom: 0;
   }
   .svg-testi {
     display: none;
-  }
-  .testimonial-content {
-    display: block;
   }
   .testimonial-title {
     margin-top: 0;
