@@ -280,6 +280,9 @@
     font-size: 0.9em;
     text-align: left;
   }
+  .home-buttons {
+    gap: 0.5rem;
+  }
   .home-button {
     width: 16rem;
     height: 3rem;
@@ -288,16 +291,16 @@
     font-size: 1em;
   }
   .home-button-play {
-    width: 10rem;
+    width: 11rem;
   }
   .home-button-play i {
-    font-size: 1.5em;
+    font-size: 1em;
   }
   .home-button-play-container p {
-    font-size: 0.6em;
+    font-size: 0.5em;
   }
   .home-button-play-container span {
-    font-size: 1em;
+    font-size: 0.8em;
   }
   .home-image {
     height: 35%;

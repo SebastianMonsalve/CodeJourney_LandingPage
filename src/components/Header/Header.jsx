@@ -52,10 +52,10 @@ const Header = () => {
             <option value="en">English</option>
           </select>
           <button className="header-button">
-            <a href="" className="button-mobile">
+            <a href="/MockUp-Mano.png" download className="button-mobile">
               <i className="fa-solid fa-download" />
             </a>
-            <a href="" className="button-web">
+            <a href="/MockUp-Mano.png" download className="button-web">
               {t("home-button")}
             </a>
           </button>
