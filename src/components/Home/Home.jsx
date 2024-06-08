@@ -38,7 +38,7 @@ const Home = () => {
           <h1 className="home-title">{t("home-title")}</h1>
           <p className="home-p">{t("home-description")}</p>
           <div className="home-buttons">
-            <a href="/Code Journey.apk" download className="home-button">
+            <a href="/Code Journey v0.1.0.apk" download className="home-button">
               <p>{t("home-button")}</p>
             </a>
             <a className="home-button-play">

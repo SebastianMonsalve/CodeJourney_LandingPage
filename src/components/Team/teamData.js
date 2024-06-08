@@ -33,7 +33,7 @@ const developerTeamData = [
     image:
       "https://res.cloudinary.com/dnalicrjk/image/upload/v1716697318/Avatars/Avatar_3_ew2109.png",
     github: "https://github.com/GabrielOque",
-    web: "https://www.linkedin.com/in/gabriel-oq/",
+    web: "https://www.linkedin.com/in/gabriel-oq?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     id: 4,

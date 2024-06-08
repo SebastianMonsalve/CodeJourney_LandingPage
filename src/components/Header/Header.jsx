@@ -52,10 +52,14 @@ const Header = () => {
             <option value="en">English</option>
           </select>
           <button className="header-button">
-            <a href="/Code Journey.apk" download className="button-mobile">
+            <a
+              href="/Code Journey v0.1.0.apk"
+              download
+              className="button-mobile"
+            >
               <i className="fa-solid fa-download" />
             </a>
-            <a href="/Code Journey.apk" download className="button-web">
+            <a href="/Code Journey v0.1.0.apk" download className="button-web">
               {t("home-button")}
             </a>
           </button>

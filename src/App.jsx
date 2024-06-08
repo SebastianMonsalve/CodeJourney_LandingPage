@@ -7,6 +7,7 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Team from "./components/Team/Team";
 import Testimonial from "./components/Tertimonial/Testimonial";
+import Svg from "./components/svg/svg";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
 
@@ -37,7 +38,8 @@ function App() {
       <Header />
       <Home />
       <Features />
-      <Testimonial />
+      <Svg />
+      {/* <Testimonial /> */}
       <Details />
       <Features_Long />
       <Carousel />
