@@ -27,7 +27,22 @@ const Details = () => {
       setTimeout(() => {
         slideRight();
       }, 10000);
-  });
+
+    const handleKeyDown = (event) => {
+      if (event.key === "ArrowLeft") {
+        slideLeft();
+      } else if (event.key === "ArrowRight") {
+        slideRight();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+      clearTimeout(timeOut);
+    };
+  }, [autoPlay, current]);
 
   const slideLeft = () => {
     setCurrent(current === 0 ? InformationApp.length - 1 : current - 1);
@@ -35,6 +50,7 @@ const Details = () => {
   const slideRight = () => {
     setCurrent(current === InformationApp.length - 1 ? 0 : current + 1);
   };
+
   return (
     <section>
       <div className="details-container">

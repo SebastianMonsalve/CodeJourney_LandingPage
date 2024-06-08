@@ -1,6 +1,6 @@
 .features {
   width: 100vw;
-  height: 100vh;
+  height: auto;
 }
 .features-main-container {
   width: 100%;
@@ -10,14 +10,14 @@
   align-items: center;
   justify-content: center;
   background-color: var(--SmokeWhite);
-  z-index: -3;
+  z-index: 0;
 }
 .svg-feat {
   display: block;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: -1;
 }
 .home-box {
   position: absolute;
@@ -26,8 +26,8 @@
 .box-red {
   width: 7rem;
   height: 7rem;
-  top: 5rem;
-  right: 85vw;
+  top: 2rem;
+  left: 12rem;
   background-color: var(--Red);
 }
 .feature-container {
@@ -36,7 +36,9 @@
   justify-content: center;
   align-items: center;
   gap: 8rem;
-  margin-top: 25rem;
+  margin-top: 15rem;
+  margin-bottom: 8rem;
+  pointer-events: all;
 }
 .feature-box {
   display: flex;
@@ -48,6 +50,15 @@
   padding: 1.5rem;
   border: 0.18rem solid var(--Gray);
   border-radius: 0.5rem;
+  pointer-events: all;
+  cursor: default;
+  transition: all 0.2s ease;
+}
+@media (hover: hover) {
+  .feature-box:hover {
+    transform: scale(1.02);
+    border-color: var(--NavyBlue);
+  }
 }
 .feature-box i {
   font-size: 4em;
@@ -76,10 +87,7 @@
   .box-red {
     width: 6rem;
     height: 6rem;
-    top: 3rem;
-  }
-  .feature-container {
-    margin-top: 20rem;
+    top: 0rem;
   }
   .feature-box {
     width: 20rem;
@@ -110,7 +118,6 @@
     top: 3rem;
   }
   .feature-container {
-    margin-top: 15rem;
     gap: 5rem;
   }
   .feature-box {
@@ -136,9 +143,6 @@
   .features {
     height: auto;
   }
-  .features-main-container {
-    height: auto;
-  }
   .box-red {
     display: none;
   }
@@ -147,6 +151,7 @@
   }
   .feature-container {
     margin-top: 2rem;
+    margin-bottom: 0;
     gap: 2rem;
   }
   .feature-box {

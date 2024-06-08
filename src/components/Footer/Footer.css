@@ -1,6 +1,5 @@
 .footer {
   width: 100vw;
-  height: 16rem;
 }
 .footer-container {
   width: 100%;
@@ -15,6 +14,7 @@
 .footer-section1 {
   width: 20%;
   height: 100%;
+  padding: 2rem 0;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -56,15 +56,13 @@
 }
 
 @media (max-width: 780px) {
-  .footer {
-    height: 10rem;
-  }
   .footer-container {
     flex-direction: column;
   }
   .footer-section1 {
     width: 100%;
     height: 50%;
+    padding: 1rem 0 0 0;
     justify-content: end;
   }
   .footer-img {

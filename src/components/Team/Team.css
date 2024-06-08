@@ -53,8 +53,8 @@
   align-items: center;
 }
 .team-image {
-  width: 14rem;
-  height: 14rem;
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
   object-fit: cover;
   background-color: var(--NavyBlue);
@@ -63,11 +63,11 @@
   text-align: center;
   font-size: 1.6rem;
   font-weight: 600;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   color: var(--DarkGreen);
 }
 .team-role {
-  margin-top: -0.5rem;
+  margin-top: -0.2rem;
   text-align: center;
   font-size: 1rem;
   font-weight: 300;
@@ -119,11 +119,11 @@
     height: 25rem;
   }
   .team-image-container {
-    height: 8rem;
+    height: 10rem;
   }
   .team-image {
-    width: 6rem;
-    height: 6rem;
+    width: 8rem;
+    height: 8rem;
   }
   .team-name {
     font-size: 1.5rem;
@@ -171,8 +171,8 @@
     height: 6rem;
   }
   .team-image {
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
   }
   .team-name {
     font-size: 1.2rem;

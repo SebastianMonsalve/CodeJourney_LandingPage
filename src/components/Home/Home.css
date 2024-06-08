@@ -171,13 +171,12 @@
   display: flex;
   justify-content: left;
   height: 88vh;
-  /* overflow: hidden; */
 }
 .home-image img {
-  mask-image: linear-gradient(black 82%, transparent);
+  mask-image: linear-gradient(black 90%, transparent);
   object-fit: cover;
   width: auto;
-  height: 105%;
+  height: 108%;
 }
 
 @media (max-width: 1046px) {
@@ -282,14 +281,14 @@
     text-align: left;
   }
   .home-button {
-    width: 12rem;
+    width: 16rem;
     height: 3rem;
   }
   .home-button p {
     font-size: 1em;
   }
   .home-button-play {
-    width: 12rem;
+    width: 10rem;
   }
   .home-button-play i {
     font-size: 1.5em;

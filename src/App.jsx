@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Carousel from "./components/Carousel/Carousel";
-import { InformationApp } from "./components/Details/Data";
 import Details from "./components/Details/Details";
 import Features from "./components/Features/Features";
 import Features_Long from "./components/Features_Long/Features_Long";

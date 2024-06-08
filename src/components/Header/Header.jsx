@@ -5,6 +5,10 @@ import i18next from "../../../services/i18next.js";
 import { useTranslation } from "react-i18next";
 
 const Header = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -31,7 +35,13 @@ const Header = () => {
   return (
     <section className={`nav ${isScrolled ? "nav-scrolled" : ""}`}>
       <div className="header-container">
-        <img src={logo} alt="logo" className="header-logo" draggable="false" />
+        <img
+          src={logo}
+          alt="logo"
+          className="header-logo"
+          draggable="false"
+          onClick={scrollToTop}
+        />
         <div className="header-menu">
           <select
             name="language"
