@@ -21,7 +21,7 @@ const developerTeamData = [
     image:
       "https://res.cloudinary.com/dnalicrjk/image/upload/v1716697319/Avatars/Avatar_9_anws3t.png",
     github: "https://github.com/Fredy034",
-    web: "https://fredy034.neocities.org/",
+    web: "https://fredyquintero.netlify.app/",
   },
   {
     id: 3,

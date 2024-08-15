@@ -1,11 +1,25 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import ScrollReveal from "scrollreveal";
 import "./Home.css";
 import mockup from "/MockUp-Mano.png";
 import { useTranslation } from "react-i18next";
+import Modal from "../Modal/Modal";
 
 const Home = () => {
   const { t } = useTranslation();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isModalOpen]);
 
   useEffect(() => {
     const sr = ScrollReveal({
@@ -27,6 +41,7 @@ const Home = () => {
 
   return (
     <section className="home">
+      <Modal isOpen={isModalOpen} closeModal={() => setIsModalOpen(false)} />
       <div className="home-container">
         <div className="home-box box-purple"></div>
         <div className="home-box box-green"></div>
@@ -41,7 +56,10 @@ const Home = () => {
             <a href="/Code Journey v0.1.0.apk" download className="home-button">
               <p>{t("home-button")}</p>
             </a>
-            <a className="home-button-play">
+            <a
+              className="home-button-play"
+              onClick={() => setIsModalOpen(true)}
+            >
               <i className="fa-brands fa-google-play" />
               <div className="home-button-play-container">
                 <p>{t("home-button2")}</p>
